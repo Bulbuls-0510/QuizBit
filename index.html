@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuizBit</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="quiz-container" id="quiz">
+        <div class="quiz-header">
+            <h1 id="quiz-name">QuizBit</h1>
+            <h2 id="question">Select a category to start the quiz</h2>
+            <ul id="answers" style="display:none;">
+                <li>
+                    <input type="radio" name="answer" id="a" class="answer">
+                    <label for="a" id="a_text" class="answer-label">Answer A</label>
+                </li>
+                <li>
+                    <input type="radio" name="answer" id="b" class="answer">
+                    <label for="b" id="b_text" class="answer-label">Answer B</label>
+                </li>
+                <li>
+                    <input type="radio" name="answer" id="c" class="answer">
+                    <label for="c" id="c_text" class="answer-label">Answer C</label>
+                </li>
+                <li>
+                    <input type="radio" name="answer" id="d" class="answer">
+                    <label for="d" id="d_text" class="answer-label">Answer D</label>
+                </li>
+            </ul>
+        </div>
+        <div class="dsa-buttons" id="dsa-buttons">
+            <button class="category-btn" onclick="loadCategory('arrays')">Arrays</button>
+            <button class="category-btn" onclick="loadCategory('linkedlists')">Linked Lists</button>
+            <button class="category-btn" onclick="loadCategory('trees')">Trees</button>
+            <button class="category-btn" onclick="loadCategory('graphs')">Graphs</button>
+            <button class="category-btn" onclick="loadCategory('sorting')">Sorting</button>
+        </div>
+        <button id="submit" style="display:none;">Submit</button>
+        <div id="timer" class="timer">10s</div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
